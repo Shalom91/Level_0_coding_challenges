@@ -9,4 +9,3 @@ def even_or_odd(number):
     else:
         print("odd")
 
-even_or_odd(4)
