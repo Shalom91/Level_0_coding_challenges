@@ -16,4 +16,3 @@ def to_hours_and_minutes(number):
 
     print(f"{hours} {hours_string}, {minutes} {minutes_string}")
 
-to_hours_and_minutes(71)
