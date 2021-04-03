@@ -1,17 +1,16 @@
 def maximum(*arguments):
+    """
+    returns the maximum number
+    *arguments: integer arguments e.g. 1,22,3,2
+    """
+    maximum_number = 0
+    *create_list, = arguments 
+    duplicate_list = [i for i in create_list]
+    list_of_small_numbers = [i for i in create_list for j in duplicate_list if i < j]
+    for i in duplicate_list:
+        if i not in list_of_small_numbers:
+            maximum_number = i
+    return maximum_number
 
-    *max_number, = arguments 
-    new_list = [i for i in max_number]
-    x = 0
-    for i in new_list:
-        x += 1
-    while x > 1:
-        for i in max_number:
-            for j in new_list:
-                if i > j:
-                    x -= 1
-    print(i)
-
-maximum(1,2,3,22)
 
         
